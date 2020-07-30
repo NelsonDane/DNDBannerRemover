@@ -2,8 +2,8 @@ Package: com.gamersnail.dndbannerremover
 Name: DNDBannerRemover
 Version: 0.0.1
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
+Description: Removes the DND Notification Banner!
 Maintainer: Nelson Dane
 Author: Nelson Dane
 Section: Tweaks
-Depends: mobilesubstrate (>= 0.9.5000)
+Depends: mobilesubstrate (>= 0.9.5000), ws.hbang.common (>= 1.13)

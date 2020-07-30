@@ -1,4 +1,6 @@
 #include "BRPRootListController.h"
+#import <CepheiPrefs/HBRootListController.h>
+#import <Cephei/HBRespringController.h>
 
 @implementation BRPRootListController
 
@@ -8,6 +10,24 @@
 	}
 
 	return _specifiers;
+}
+
+- (void)openGithub {
+	[[UIApplication sharedApplication]
+	openURL:[NSURL URLWithString:@"https://github.com/NelsonDane/HapticVolume"]
+	options:@{}
+	completionHandler:nil];
+}
+
+- (void)respring {
+	  [HBRespringController respring];
+}
+
+- (void)openDonate {
+	[[UIApplication sharedApplication]
+	openURL:[NSURL URLWithString:@"https://paypal.me/NelsonDane15"]
+	options:@{}
+	completionHandler:nil];
 }
 
 @end
