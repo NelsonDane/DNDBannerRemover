@@ -1,12 +1,13 @@
 #import <Cephei/HBPreferences.h>
 
+// Variables
 static BOOL isEnabled;
-//static BOOL carplayUnlock;
-//static CGFloat hapticStrength;
+static BOOL carplayUnlock;
 
+// Disable CarPlay Unlock Confirmation when the setting is on and the tweak is enabled
 %hook SBCarDoNotDisturbController
 -(BOOL)_isExitConfirmationRequired {
-  if (isEnabled) {
+  if (isEnabled && carplayUnlock) {
     %log;
     BOOL r = FALSE;
     HBLogDebug(@" = %d", r);
@@ -21,10 +22,10 @@ static BOOL isEnabled;
 
 %end
 
+// Settings
 %ctor {
 
   HBPreferences *preferences = [[HBPreferences alloc] initWithIdentifier:@"com.gamersnail.dndbannerremoverpreferences"];
   [preferences registerBool:&isEnabled default:YES forKey:@"isEnabled"];
-	[preferences registerBool:&isEnabled default:YES forKey:@"carplayUnlock"];
-	//[preferences registerFloat:&hapticStrength default:2 forKey:@"hapticStrength"];
+	[preferences registerBool:&carplayUnlock default:YES forKey:@"carplayUnlock"];
 }

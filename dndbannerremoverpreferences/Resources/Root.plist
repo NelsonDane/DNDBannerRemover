@@ -9,7 +9,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>DNDBannerRemover Settings</string>
+			<string>Enable/Disable Entire Tweak</string>
 		</dict>
 
 		<dict>
@@ -23,6 +23,13 @@
 			<string>isEnabled</string>
 			<key>PostNotification</key>
 			<string>com.gamersnail.dndbannerremoverpreferences/ReloadPrefs</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Toggles</string>
 		</dict>
 
 		<dict>

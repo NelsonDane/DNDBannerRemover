@@ -14,7 +14,7 @@
 
 - (void)openGithub {
 	[[UIApplication sharedApplication]
-	openURL:[NSURL URLWithString:@"https://github.com/NelsonDane/HapticVolume"]
+	openURL:[NSURL URLWithString:@"https://github.com/NelsonDane/DNDBannerRemover"]
 	options:@{}
 	completionHandler:nil];
 }

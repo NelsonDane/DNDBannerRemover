@@ -1,6 +1,6 @@
 Package: com.gamersnail.dndbannerremover
 Name: DNDBannerRemover
-Version: 0.0.1
+Version: 0.0.5
 Architecture: iphoneos-arm
 Description: Removes the DND Notification Banner!
 Maintainer: Nelson Dane

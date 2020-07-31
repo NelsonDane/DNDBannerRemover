@@ -15,7 +15,7 @@
 		<key>isController</key>
 		<true/>
 		<key>label</key>
-		<string>DNDBannerRemoverPreferences</string>
+		<string>DNDBannerRemover</string>
 	</dict>
 </dict>
 </plist>
